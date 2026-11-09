@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="draw.io">
   <diagram id="adapter-facade-structure" name="Структурная диаграмма Adapter и Facade">
-    <mxGraphModel dx="988" dy="361" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="920" math="0" shadow="0">
+    <mxGraphModel dx="1586" dy="902" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="920" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry height="30" width="500" x="400" y="10" as="geometry" />
         </mxCell>
         <mxCell id="ba" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="«interface»&lt;br&gt;&lt;b&gt;&lt;i&gt;BaseAnalogClock&lt;/i&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="238" width="380" x="60" y="60" as="geometry" />
+          <mxGeometry height="238" width="380" x="60" y="570" as="geometry" />
         </mxCell>
         <mxCell id="ba-m1" parent="ba" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;" value="+ set_date_time(year, month, day,&lt;br&gt;hour_angle, minute_angle, second_angle, day_night_division)" vertex="1">
           <mxGeometry height="44" width="380" y="40" as="geometry" />
@@ -44,7 +44,7 @@
           <mxGeometry height="22" width="320" y="62" as="geometry" />
         </mxCell>
         <mxCell id="ac" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=0;" value="AnalogClock" vertex="1">
-          <mxGeometry height="386" width="380" x="60" y="430" as="geometry" />
+          <mxGeometry height="386" width="380" x="60" y="100" as="geometry" />
         </mxCell>
         <mxCell id="ac-a1" parent="ac" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;" value="- year : int" vertex="1">
           <mxGeometry height="22" width="380" y="26" as="geometry" />
@@ -169,13 +169,13 @@
         <mxCell id="hist-m2" parent="hist" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;fontSize=11;" value="+ all() : tuple" vertex="1">
           <mxGeometry height="22" width="300" y="78" as="geometry" />
         </mxCell>
-        <mxCell id="e1" edge="1" parent="1" source="ac" style="endArrow=block;endFill=0;dashed=1;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ba" value="">
+        <mxCell id="e1" edge="1" parent="1" source="ac" style="endArrow=block;endFill=0;dashed=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="ba" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e2" edge="1" parent="1" source="ad" style="endArrow=block;endFill=0;dashed=1;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.497;entryY=1.091;entryDx=0;entryDy=0;entryPerimeter=0;" target="bd-m2" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" edge="1" parent="1" source="ad" style="startArrow=diamondThin;startFill=0;endArrow=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.05;entryDx=0;entryDy=0;" target="ac" value="">
+        <mxCell id="e3" edge="1" parent="1" source="ad" style="startArrow=diamondThin;startFill=0;endArrow=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ba-m3" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="e4" edge="1" parent="1" source="dd-a" style="endArrow=open;dashed=1;html=1;entryX=0.997;entryY=0.136;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="bd-m1" value="">

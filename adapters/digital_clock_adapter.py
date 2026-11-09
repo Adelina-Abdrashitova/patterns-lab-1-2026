@@ -35,6 +35,6 @@ class DigitalClockAdapter(BaseDigitalClock):
             year=self.analog_clock.get_year(),
             month=self.analog_clock.get_month(),
             day=self.analog_clock.get_day(),
-            hour=int(hour),
-            minute=int(round(self.analog_clock.get_minute_angle() % 360 / 6) % 60),
-            second=int(round(self.analog_clock.get_second_angle() % 360 / 6) % 60))
+            hour=hour,
+            minute=round(self.analog_clock.get_minute_angle() % 360 / 6) % 60,
+            second=round(self.analog_clock.get_second_angle() % 360 / 6) % 60)
